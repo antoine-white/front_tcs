@@ -7,7 +7,7 @@ describe('Count.vue', () => {
     const wrapper = mount(Count);
     const clicked = 3;
     for (let i = 0; i < clicked; i++) 
-      await wrapper.find('button').trigger('click');
+      await wrapper.find('b-button').trigger('click');
     expect(wrapper.find('p').text()).to.include(clicked);
   })
 })
