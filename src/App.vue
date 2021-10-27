@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--<img alt="Vue logo" src="./assets/logo.png">-->
+    <Hello msg="Vuejs tets app" />
+    <Count />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Count from './components/Count.vue'
+import Hello from './components/Hello.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Hello,
+    Count
   }
 }
 </script>
